@@ -1,13 +1,14 @@
 # 🔗 Scalable URL Shortener
 
 A **production-ready URL Shortener backend** built with **Node.js**, **PostgreSQL**, **Drizzle ORM**, and **Redis**, focusing on **performance, scalability, and clean system design**.
-
-This project demonstrates how real-world URL shorteners are designed using **cache-aside patterns**, **database indexing**, and **efficient analytics tracking**.
+A **production-ready URL Shortener backend** built with **Node.js**, **PostgreSQL**, **Drizzle ORM**, **Redis** and **JWT authentication**, focusing on **performance, scalability, and secure API design**.
+This project demonstrates how real-world URL shorteners are designed using **cache-aside patterns**, **database indexing**, **authentication & authorization**, and **efficient analytics tracking**.
 
 ---
 
 ## 🚀 Features
 
+- 🔐 JWT-based authentication & authorization
 - 🔐 Generate **unique short URLs** using Base62 encoding
 - ⚡ Ultra-fast redirects using **Redis caching**
 - 📊 **Click analytics** with Redis atomic counters
@@ -25,9 +26,21 @@ This project demonstrates how real-world URL shorteners are designed using **cac
 - **PostgreSQL** – Primary database
 - **Drizzle ORM** – Type-safe ORM
 - **Redis** – Caching & analytics
+- **JWT (JSON Web Tokens)** – Authentication
 - **Docker** – Local infrastructure (optional)
 
 ---
+
+## 🔐 Authentication & Authorization (JWT)
+1. User registers / logs in
+2. Server issues a **JWT access token**
+3. Client sends token in ```Authorization header```
+4. Protected routes verify JWT
+5. Only authenticated users can:
+    - Create short URLs
+    - View analytics
+    - Manage their URLs
+
 
 ## 🔁 URL Redirect Flow
 
