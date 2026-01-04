@@ -1,4 +1,4 @@
-# 🔗 Scalable URL Shortener
+# 🔗 Scalable URL Shortener (JWT Auth Enabled)
 
 A **production-ready URL Shortener backend** built with **Node.js**, **PostgreSQL**, **Drizzle ORM**, and **Redis**, focusing on **performance, scalability, and clean system design**.
 A **production-ready URL Shortener backend** built with **Node.js**, **PostgreSQL**, **Drizzle ORM**, **Redis** and **JWT authentication**, focusing on **performance, scalability, and secure API design**.
@@ -79,7 +79,9 @@ npm install
 Create `.env` file in the project root path
 ```
 PORT=3000
-DATABASE_URL=postgresql://user:password@localhost:5432/url_shortener
+DATABASE_URL=postgresql://<user>:<password>@localhost:5432/url_shortener
+JWT_SECRET=<YOUR ACCESS TOKEN SECRET KEY>
+REFRESH_TOKEN_SECRET=<YOUR REFRESH TOKEN SECRET KEY>
 REDIS_URL=redis://localhost:6379
 ```
 
