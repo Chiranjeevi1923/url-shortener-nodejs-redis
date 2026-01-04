@@ -2,6 +2,8 @@
 
 A **production-ready URL Shortener backend** built with **Node.js**, **PostgreSQL**, **Drizzle ORM**, and **Redis**, focusing on **performance, scalability, and clean system design**.
 A **production-ready URL Shortener backend** built with **Node.js**, **PostgreSQL**, **Drizzle ORM**, **Redis** and **JWT authentication**, focusing on **performance, scalability, and secure API design**.
+
+
 This project demonstrates how real-world URL shorteners are designed using **cache-aside patterns**, **database indexing**, **authentication & authorization**, and **efficient analytics tracking**.
 
 ---
